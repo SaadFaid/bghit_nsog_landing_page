@@ -1,0 +1,32 @@
+/* src/CarsInfosPage.css */
+
+.cars-infos-content {
+  background-color: #5D5B5C;
+  color: #C4C4C4;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ 
+.info-box {
+  text-align: center;
+  margin: 80px;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+ 
+.info-number {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+ 
+.info-description {
+  font-size: 1.2em;
+}
+ 
+@media (max-width: 668px) {
+  .info-box {
+    margin: 20px;
+  }
+}

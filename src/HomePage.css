@@ -1,0 +1,257 @@
+body {
+  height: 100%;
+  background: linear-gradient(90deg, #D9D9D9 45%, #232323 45%);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -30px;
+}
+
+.logo-section {
+  display: flex;
+  width: 28%;
+  justify-content: center;
+}
+
+.logo {
+  margin-right: 10px;
+  width: 160px;
+  height: 160px;
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+  width: 54%;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: #E0E0E0;
+  margin: 0 30px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.hero-section {
+  background-color: #232323;
+  color: white;
+  height: 100vh;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section .display-4 {
+  font-weight: bold;
+}
+
+.hero-section .btn {
+  margin-top: 20px;
+}
+
+.hero-section img {
+  margin-top: 20px;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
+  padding: 20px;
+  margin-top: 5px;
+  border-radius: 10px;
+  margin-left: 150px;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+  width: 100%;
+  max-width: 600px; /* Max width for larger screens */
+}
+
+.social-media-bar {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 60px;
+}
+
+.social-links::before {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.social-links::after {
+  display: block;
+  width: 2px;
+  height: 100px;
+  margin-top: 9px;
+}
+
+.social-links a {
+  margin: 10px 0;
+}
+
+.social-links img {
+  width: 15px;
+  height: 15px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.main-title {
+  font-size: 3.7em;
+  margin-bottom: 20px;
+}
+
+.main-description {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.explore-button {
+  background-color: #51A5F3;
+  border: none;
+  padding: 10px 50px;
+  font-size: 1.3em;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.car-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: auto;
+  z-index: 4;
+}
+
+@media (max-width: 768px) {
+ 
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -30px;
+}
+
+.logo-section {
+  display: flex;
+  width: 28%;
+  justify-content: center;
+}
+
+.logo {
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+  width: 54%;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: #E0E0E0;
+  padding: 0 10px; /* Adjust padding as needed */
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+}
+  .social-media-bar {
+    position: absolute;
+    left: -30px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+  }
+  
+  .social-links::after {
+    display: block;
+    align-items: center;
+    width: 2px;
+    height: 100px;
+    margin-top: 9px;
+  }
+  
+  .social-links img {
+    width: 10px;
+    height: 10px;
+  }
+  .hero-text {
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
+    padding: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-left: 50px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+    height: auto;
+    max-width: 600px; /* Max width for larger screens */
+  }
+
+  .hero-text {
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    
+  }
+
+  .main-title {
+    font-size: 1.2em;
+  }
+
+  .main-description {
+    font-size: 0.8em;
+  }
+
+  .explore-button {
+    padding: 10px 30px;
+    font-size: 0.6em;
+  }
+
+  .car-image {
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+    width: 64%;
+    height: auto;
+    z-index: 4;
+  }
+}
