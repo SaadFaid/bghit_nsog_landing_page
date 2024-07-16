@@ -1,3 +1,5 @@
+/* HomePage.css */
+
 body {
   height: 100%;
   background: linear-gradient(90deg, #D9D9D9 45%, #232323 45%);
@@ -41,6 +43,7 @@ body {
   font-size: 1em;
   cursor: pointer;
 }
+
 .hero-section {
   background-color: #232323;
   color: white;
@@ -154,83 +157,103 @@ body {
   z-index: 4;
 }
 
-@media (max-width: 768px) {
- 
-.header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: -30px;
-}
-
-.logo-section {
-  display: flex;
-  width: 28%;
-  justify-content: center;
-}
-
-.logo {
-  margin-right: 10px;
-  width: 100px;
-  height: 100px;
-}
-
-.nav-section {
+.scroll-to-top {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 40px; /* Set a fixed smaller width */
+  height: 40px; /* Set a fixed smaller height */
   display: flex;
   align-items: center;
-  width: 54%;
-  justify-content: space-between;
-}
-
-.nav-links {
-  display: flex;
-}
-
-.nav-links a {
-  color: #E0E0E0;
-  padding: 0 10px; /* Adjust padding as needed */
-  font-size: 1em;
+  justify-content: center;
   cursor: pointer;
-  text-decoration: none;
+  z-index: 1000;
 }
+
+.scroll-to-top img {
+  width: 100%; /* Make the image fit the container */
+  height: 100%; /* Make the image fit the container */
+}
+
+@media (max-width: 900px) {
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -30px;
+  }
+
+  .logo-section {
+    display: flex;
+    width: 28%;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .nav-section {
+    display: flex;
+    align-items: center;
+    width: 54%;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: #E0E0E0;
+    margin: 0 5px; /* Adjust margin to make links even closer */
+    font-size: 0.7em; /* Make font even smaller */
+    cursor: pointer;
+    padding: 3px; /* Reduce padding even more */
+  }
+
   .social-media-bar {
     position: absolute;
-    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     z-index: 3;
   }
-  
-  .social-links::after {
-    display: block;
+
+  .social-links {
+    margin-left: 20px;
     align-items: center;
-    width: 2px;
-    height: 100px;
-    margin-top: 9px;
   }
-  
+
   .social-links img {
     width: 10px;
     height: 10px;
   }
+
   .hero-text {
     background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
     padding: 20px;
     margin-top: 5px;
+    align-items: center;
     border-radius: 10px;
-    margin-left: 50px;
-    position: relative;
-    z-index: 3;
+    margin: 0 auto; /* Center the hero text */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
     height: auto;
     max-width: 600px; /* Max width for larger screens */
   }
 
   .hero-text {
-    width: 40%;
+    width: 80%;
     height: auto;
     padding: 10px;
-    
   }
 
   .main-title {
@@ -247,11 +270,9 @@ body {
   }
 
   .car-image {
-    position: absolute;
-    bottom: 30%;
-    right: 0;
-    width: 64%;
+    position: relative;
+    width: 80%;
     height: auto;
-    z-index: 4;
+    margin: 0 auto; /* Center the car image */
   }
 }

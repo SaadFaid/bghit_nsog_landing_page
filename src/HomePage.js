@@ -7,11 +7,16 @@ import twitterIcon from './images/twitter.png';  // Update with the correct imag
 import instagramIcon from './images/instagram.png';  // Update with the correct image path
 import envelopeIcon from './images/envelope.png';  // Update with the correct image path
 import whatsappIcon from './images/whatsapp.png';  // Update with the correct image path
+import scrollTopIcon from './images/up.png';  // Update with the correct image path
 
 const HomePage = () => {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     section.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -32,7 +37,7 @@ const HomePage = () => {
           </div>
           <div className="nav-section">
             <div className="nav-links">
-              <a href="#" >Home</a>
+              <a href="#">Home</a>
               <a href="#" onClick={() => scrollToSection('about')}>About</a>
               <a href="#" onClick={() => scrollToSection('booking')}>Booking</a>
               <a href="#" onClick={() => scrollToSection('cars')}>Cars</a>
@@ -54,6 +59,9 @@ const HomePage = () => {
             <img src={carImage} alt="Car" className="car-image" />
           </div>
         </div>
+      </div>
+      <div className="scroll-to-top" onClick={scrollToTop}>
+        <img src={scrollTopIcon} alt="Scroll to Top" />
       </div>
     </div>
   );
