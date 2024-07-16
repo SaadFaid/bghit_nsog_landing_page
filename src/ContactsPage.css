@@ -8,35 +8,32 @@
   position: relative;
   left: 25%;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 40px;
   width: 50%;
   height: auto;
 }
 
 .contact-info {
   color: #000000;
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 1.4em;
   text-align: center;
 }
 
 .contact-info a {
-  color: #51A5F3;
+  color: #2c99ff;
   text-decoration: none;
 }
 
-.footer {
-  margin-top: 90px;
-}
-
 .footer p {
-  margin-bottom: 10px;
-  color: #1168b9;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: #2c99ff;
   font-size: 1.8em;
 }
 
 .social {
-  margin-top: 60px;
+  margin-top: 5px;
   display: flex;
   gap: 40px;
   float: right;
