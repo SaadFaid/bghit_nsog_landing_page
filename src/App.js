@@ -1,16 +1,13 @@
-// src/App.js
 import React from 'react';
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import BookingPage from './BookingPage';
 import CarsInfosPage from './CarsInfosPage';
 import ContactsPage from './ContactsPage';
-import './App.css';
 
-
-const App = () => {
+function App() {
   return (
-    <div>
+    <div className="App">
       <HomePage />
       <AboutPage />
       <BookingPage />
