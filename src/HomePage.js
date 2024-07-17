@@ -37,11 +37,11 @@ const HomePage = () => {
           </div>
           <div className="nav-section">
             <div className="nav-links">
-              <a href="#">Home</a>
-              <a href="#" onClick={() => scrollToSection('about')}>About</a>
-              <a href="#" onClick={() => scrollToSection('booking')}>Booking</a>
-              <a href="#" onClick={() => scrollToSection('cars')}>Cars</a>
-              <a href="#" onClick={() => scrollToSection('contacts')}>Contacts</a>
+              <a href="#Home">Home</a>
+              <a href="#about" onClick={() => scrollToSection('about')}>About</a>
+              <a href="#booking" onClick={() => scrollToSection('booking')}>Booking</a>
+              <a href="#cars" onClick={() => scrollToSection('cars')}>Cars</a>
+              <a href="#contacts" onClick={() => scrollToSection('contacts')}>Contacts</a>
             </div>
           </div>
         </div>
