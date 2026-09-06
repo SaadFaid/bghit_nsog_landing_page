@@ -14,7 +14,7 @@ const ContactsPage = () => {
         <a href="#"><img src={downloadapp} alt="download the app" className="app-download-content"/></a>
       </div>
       <div className="contact-info">
-        <p>Need help renting a car? Please call <a href="tel:+212637668207">+212 637668207</a></p>
+        <p>Need help renting a car? Please call <a href="tel:+00000000000">+000 000000000</a></p>
       </div>
       <div className="social">
         <a href="#"><img src={facebookIcon} alt="Facebook" /></a>
@@ -24,7 +24,7 @@ const ContactsPage = () => {
         <a href="#"><img src={envelopeIcon} alt="Envelope" /></a>
       </div>
       <div className="footer">
-        <p>BGHIT NSOG</p>
+        <p>Your Car Rental</p>
       </div>
     </div>
   );

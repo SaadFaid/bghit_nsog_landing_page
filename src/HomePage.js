@@ -50,7 +50,7 @@ const HomePage = () => {
             <div className="hero-text">
               <h1 className="main-title">Enjoy your life with our comfortable cars.</h1>
               <p className="main-description">
-                Bghit Nsog is ready to serve the best <br /> experience in car rental.
+                Your Car Rental is ready to serve the best <br /> experience in car rental.
               </p>
               <button className="explore-button" onClick={() => scrollToSection('contacts')}>Explore Now</button>
             </div>

@@ -11,7 +11,7 @@ const BookingPage = () => {
     <div className="booking-content" id="booking">
       <h2 className="booking-title">Our Premium Services</h2>
       <p className="booking-description">
-        Bghit Nsog is a reputable car rental company that offers <br /> a wide range of useful services for every taste.
+        Your Car Rental is a reputable car rental company that offers <br /> a wide range of useful services for every taste.
      </p>
       <div className="services">
         <div className="service">
@@ -34,13 +34,13 @@ const BookingPage = () => {
       <div className="clients">
         <div className="client">
           <img src={client1Image} alt="Client 1" className="client-image" />
-          <p className="client-name">amine elradi</p>
-          <p className="client-feedback">I rented a car for a one-week trip from <br />Bghit Nsog on the recommendation of my <br />friend. Actually, I am satisfied with them.</p>
+          <p className="client-name">YOUR_CLIENT_NAME</p>
+          <p className="client-feedback">I rented a car for a one-week trip from <br />Your Car Rental on the recommendation of my <br />friend. Actually, I am satisfied with them.</p>
         </div>
         <div className="client">
           <img src={client2Image} alt="Client 2" className="client-image" />
-          <p className="client-name">ahmed refqi</p>
-          <p className="client-feedback">During my last trip, I used a Bghit Nsog <br />sport car. The car was completely <br /> clean and had enough gas.</p>
+          <p className="client-name">YOUR_CLIENT_NAME</p>
+          <p className="client-feedback">During my last trip, I used a Your Car Rental <br />sport car. The car was completely <br /> clean and had enough gas.</p>
         </div>
       </div>
     </div>
